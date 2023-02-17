@@ -12,7 +12,7 @@ Conceptual design is simply trying to model the solution or our proposed system 
 ### Logical Architectual Diagram for Cruddur.
 Based on the Requirement gathering meeting, the logical design required for cruddur is to explain in more detail the necessary services to get started with cruddur.
 
-logical architectual
+
 ![logical design image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/logical-design.JPG)
 
 [logical design lucidchart](https://lucid.app/lucidchart/8e0ba25f-d422-4fbc-bc26-99b956ffd2a5/edit?viewport_loc=-523%2C-170%2C2624%2C1260%2C0_0&invitationId=inv_af1328ef-fecd-4871-a0da-a265523aab27)
@@ -23,6 +23,9 @@ I  exported environment variables such as the Access key and secret access key. 
 I could not push my .gitpod.yml to the aws-bootcamp-cruddur-2023 GitHub repository due to permission being denied. I  resolved this by setting the GitHub configuration for my Gitpod and integrating the Gitpod setting to allow writing to a public repository.
 
 I resolve the permission error. This is the diagram of proof 
+
+
+
 ![gitpod](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/gitpod-config.PNG)
 
 ![aws-cli-proof](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/aws-cli-config.png)
