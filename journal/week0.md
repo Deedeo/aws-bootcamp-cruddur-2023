@@ -48,3 +48,32 @@ aws-sns-topic
 
 aws billing alarm
 ![aws-billing-alarm](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/cloudwatch.JPG)
+
+
+## HomeWork challenges
+
+
+Set MFA for root user and my IAM admin user
+
+![root user](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/mfa.PNG)
+
+I created a ci/cd pipeline diagram for cruddur app i dont fully understand pipeline. As the bootcamp progress i will understand better.
+
+![cicd-pipeline-diagram](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/cicd.JPG)
+
+
+
+[cicd-link](https://t.co/dKY5mMg6rU)
+
+
+I used EventBridge to hookup Health Dashboard to SNS and send notification to my mail when there is a service health issue.
+
+![eventbride-aws-cli](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/eventbridge.JPG)
+
+
+
+![sns-confirmation](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/sns.JPG)
+
+
+![console-pics](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/aws-eventbridge.JPG)
+
