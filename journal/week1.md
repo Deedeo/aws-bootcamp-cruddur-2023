@@ -56,12 +56,12 @@ cd ..
   ```sh
   docker run -p 3000:3000 -d frontend-react-js
   ```
- #### Added "npm install" to gitpod.yml to ensure it is start up with workspace
+- Added "npm install" to gitpod.yml to ensure it is start up with workspace
 [commit cf4cc00](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/cf4cc00e50724ead118bde230eba75fdeb45833e) 
  
 - Create a Docker Compose file in the project root directory [(commit dc2c7f7)](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/dc2c7f7a259d77d9dbb4076a5b50ca346b95a994)
   
-  Build and run the container using the command `docker compose up`.
+- Build and run the container using the command `docker compose up`.
  
   
   
