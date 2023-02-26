@@ -14,7 +14,7 @@ services:
       REACT_APP_BACKEND_URL: "https://4567-${GITPOD_WORKSPACE_ID}.${GITPOD_WORKSPACE_CLUSTER_HOST}"
     build: ./frontend-react-js
     ports:
-      - "3000:3000"
+      - "3000:80"
     volumes:
       - ./frontend-react-js:/frontend-react-js
   dynamodb-local:
