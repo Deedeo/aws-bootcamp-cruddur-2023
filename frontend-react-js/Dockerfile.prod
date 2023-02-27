@@ -1,0 +1,27 @@
+FROM node:16.18 as build
+
+WORKDIR /frontend-react-js
+COPY package.json .
+RUN npm install
+
+ENV PORT=3000
+COPY . .
+EXPOSE ${PORT}
+
+RUN npm run build
+
+# Stage 2: Run the application
+FROM nginx:stable-alpine
+
+WORKDIR /usr/share/nginx/html
+
+# Remove default nginx static resources
+RUN rm -rf ./*
+
+# Copy build files from stage1 (it has all react weeb files)
+COPY --from=build /frontend-react-js/build .
+
+# Installs a custom nginx configuration file
+COPY nginx/nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
