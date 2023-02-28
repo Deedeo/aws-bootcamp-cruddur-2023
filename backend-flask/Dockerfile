@@ -7,6 +7,13 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
+# Update repository
+
+RUN apt-get update 
+
+# installs curl for health checks
+RUN apt-get install -y curl
+
 ENV FLASK_ENV=development
 
 EXPOSE ${PORT}
