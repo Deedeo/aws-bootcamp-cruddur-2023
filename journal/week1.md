@@ -123,6 +123,17 @@ Here I made healthchecks for the frontend and backend in the docker compose file
 
 - ![EC2 with cruddur](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/dockerpull.JPG)
 
+### Multistage Build
+
+Multistage build in a Dockerfile involves two stage, Multi-stage build help to reduce the image size.My image size reduce from 1.15GB to 144MB.The way we can achieve this is by keeping only the actual files needed for production and leaving unnecessary ones behind in the build stage.
+
+For this multi-build I created a new file [commit 6ac7c4f](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/6ac7c4f39a9044a597d21aeaecd82b4afc530f15)
+
+These is the the result of the different after implementing a multi-stage build.
+![single build size](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/docker-image-size.JPG)
+![multi build size](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/docker-image-new-size.JPG)
+
+
 
 ### Best Dockerfile Practices Researched and Implemented
 
