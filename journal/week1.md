@@ -115,12 +115,13 @@ This is a picture of my webpage for both notifications and home-page
 
 
 ### Implement healthcheck to Docker compose file
+
+
 Here I made healthchecks for the frontend and backend in the docker compose file, i was facing health ckeck failure after this so my logs made me understand curl was not install so i add curl Installation to the Dockerfile [commit 6ac7c4f](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/6ac7c4f39a9044a597d21aeaecd82b4afc530f15)
 
 ### Launch EC2 Instance, Installed Docker and Pull the cruddur images
+
 - ![EC2 with cruddur](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/dockerpull.JPG)
-
-
 
 
 ### Best Dockerfile Practices Researched and Implemented
