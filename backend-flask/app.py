@@ -27,9 +27,9 @@ from opentelemetry.sdk.trace.export import BatchSpanProcessor
 # from aws_xray_sdk.ext.flask.middleware import XRayMiddleware
 
 # CLoudwatch logs
-# import watchtower
-# import logging
-# from time import strftime
+import watchtower
+import logging
+from time import strftime
 
 # RollBar -----------------
 import os
@@ -50,6 +50,8 @@ from flask import got_request_exception
 provider = TracerProvider()
 processor = BatchSpanProcessor(OTLPSpanExporter())
 provider.add_span_processor(processor)
+
+
 trace.set_tracer_provider(provider)
 tracer = trace.get_tracer(__name__)
 
@@ -62,7 +64,7 @@ tracer = trace.get_tracer(__name__)
 app = Flask(__name__)
 
 #X-RAY-----------------------------
-XRayMiddleware(app, xray_recorder)
+# XRayMiddleware(app, xray_recorder)
 #Honeycomb --------------------------------
 # Initialize automatic instrumentation with Flask
 FlaskInstrumentor().instrument_app(app)
