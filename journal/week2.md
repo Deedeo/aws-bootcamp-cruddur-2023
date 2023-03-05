@@ -1,9 +1,8 @@
 # Week 2 — Distributed Tracing
-# Week 2 — Distributed Tracing
 
-## Required Homework
+### Required Homework
 
-## Instrument with HoneyComb
+### Instrument with HoneyComb
 
 ### Configure OpenTelemetry for Python-flask
 
@@ -61,8 +60,8 @@ from opentelemetry import trace
 tracer = trace.get_tracer("tracer.name.here")
 ```
 
-- **Creating Span**
-- **Created a custom attribute inside that span**
+- Creating Span
+- Created a custom attribute inside that span
 ```py
 with tracer.start_as_current_span("home-activites-mock-data"):
     span = trace.get_current_span() # this will get the span
@@ -70,14 +69,14 @@ with tracer.start_as_current_span("home-activites-mock-data"):
     span.set_attribute("app.now", now.isoformat()) # this app.now attribute will show inside this span "home-activites-mock-data" , its data is the time now in ISO foramt.
 ```
 
-**Run queries to explore traces within Honeycomb.io**
+Tracing results on honeycomb
 ![image]()
 
-**Explore attributes of our custom span**
+**span attributes
 ![image]()
 
 
-## AWS X-RAY
+### AWS X-RAY
 
 ### Instrument AWS X-Ray into Backend (Python-Flask) App
 - Add the line below to `requirements.txt` file and install it using `pip install -r requirements.txt`.
@@ -158,7 +157,7 @@ aws xray create-sampling-rule --cli-input-json file://aws/json/xray-sampling-rul
 
 
 
-## AWS CloudWatch Logs
+### AWS CloudWatch Logs
 
 ### Install WatchTower and Import It in the Code
 
@@ -208,7 +207,7 @@ AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
 `Note` Passing `AWS_REGION` doesn't seem to get picked up by `boto3` so pass `AWS_DEFAULT_REGION` instead
 
 
-## Rollbar
+### Rollbar
 
 ### Add the Flask SDK
 
