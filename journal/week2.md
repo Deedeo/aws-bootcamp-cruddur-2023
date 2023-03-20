@@ -72,6 +72,9 @@ with tracer.start_as_current_span("home-activites-mock-data"):
 Tracing results on honeycomb
 ![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/tracing.PNG)
 
+ [commit details](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/56927496341dfb384d9d0df939a92b26e2f749bd)
+
+ [commit details](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/56927496341dfb384d9d0df939a92b26e2f749bd)
 
 
 ### AWS X-RAY
@@ -151,7 +154,7 @@ aws xray create-sampling-rule --cli-input-json file://aws/json/xray-sampling-rul
 ![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/tracing1.PNG)
 
 
- [commit details]()
+ [commit details](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/b1e4f66e22637ca2b68f8520847a361a2bf29430)
 
 
 
@@ -209,6 +212,8 @@ AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
 ### Observe AWS cloud Watch Logs within the AWS Console
 **proof of work**
 ![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/cw.PNG)
+
+ [commit details](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/8448c5b7a09cf385b83ac0b317ead0e4ee30799c)
 
 
 
@@ -279,3 +284,7 @@ def rollbar_test():
 **proof of work**
 ![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/rollbar2.PNG)
 ![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/rollbar.PNG)
+
+ [commit details](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/a9d4e3b53be53f1e7df545ca8499e56ba96ec357)
+ [commit details](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/commit/8e2ed8d1eadaab525d1d9349500c1eb698a5eb84)
+ 
