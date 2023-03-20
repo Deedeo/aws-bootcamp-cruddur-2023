@@ -70,10 +70,8 @@ with tracer.start_as_current_span("home-activites-mock-data"):
 ```
 
 Tracing results on honeycomb
-![image]()
+![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/tracing.PNG)
 
-**span attributes
-![image]()
 
 
 ### AWS X-RAY
@@ -150,7 +148,7 @@ aws xray create-sampling-rule --cli-input-json file://aws/json/xray-sampling-rul
 
 ### Observe X-Ray traces within the AWS Console
 **proof of work**
-![image]()
+![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/tracing1.PNG)
 
 
  [commit details]()
@@ -204,7 +202,14 @@ AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION}"
 AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID}"
 AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY}"
 ```
-`Note` Passing `AWS_REGION` doesn't seem to get picked up by `boto3` so pass `AWS_DEFAULT_REGION` instead
+### Observe X-Ray traces within the AWS Console
+**proof of work**
+![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/tracing1.PNG)
+
+### Observe AWS cloud Watch Logs within the AWS Console
+**proof of work**
+![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/cw.PNG)
+
 
 
 ### Rollbar
@@ -270,3 +275,7 @@ def rollbar_test():
     rollbar.report_message('Just for test', 'warning')
     return "Just for test"
 ```
+### Observe Rollbar in the console
+**proof of work**
+![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/rollbar2.PNG)
+![image](https://github.com/Deedeo/aws-bootcamp-cruddur-2023/blob/main/journal/assets/rollbar.PNG)
