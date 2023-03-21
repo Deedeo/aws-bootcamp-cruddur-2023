@@ -2,6 +2,7 @@ from flask import Flask
 from flask import request
 from flask_cors import CORS, cross_origin
 import os
+# import requests
 
 from services.home_activities import *
 from services.notifications_activities import *

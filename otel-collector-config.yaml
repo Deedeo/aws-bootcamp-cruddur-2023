@@ -1,0 +1,27 @@
+# receivers:
+#   otlp:
+#     protocols:
+#       http: #port 4318
+#        # include_metadata: true
+#         cors:
+#           allowed_origins:
+#             - "${REACT_APP_FRONTEND_URL_HTTP}"
+#             - "${REACT_APP_FRONTEND_URL_HTTPS}"
+
+# processors:
+#   batch:
+
+# exporters:
+#   otlp:
+#     endpoint: "api.honeycomb.io:443"
+#     headers:
+#       "x-honeycomb-team": "FY3XYXcxQeItejP2DKKC0H"
+#   logging:
+#     loglevel: debug
+
+# service:
+#   pipelines:
+#     traces:
+#       receivers: [otlp]
+#       processors: [batch]
+#       exporters: [otlp]
