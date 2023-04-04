@@ -52,15 +52,15 @@ class CreateActivity:
         return model
 
     def create_activity(handle, message, expires_at):
-        sql = db.read_sql_template('activities', 'create')
-        uuid = db.query_commit(sql,
-                               handle=handle,
-                               message=message,
-                               expires_at=expires_at
-                               )
+        sql = db.template('activities','create')
+        uuid = db.query_commit(sql,{
+        'handle': handle,
+        'message': message,
+        'expires_at': expires_at
+        })
         return uuid
-
     def query_object_activity(uuid):
-        sql = db.read_sql_template('activities', 'object')
-        return db.query_object_json(sql, uuid=uuid
-                                    )
+        sql = db.template('activities','object')
+        return db.query_object_json(sql,{
+        'uuid': uuid
+        })
